@@ -129,8 +129,7 @@ margin-top: 4%;
 
 const TextCard = styled.p`
 margin-bottom: 20px;
-white-space: wrap;
-//font-size: x-small;
+white-space: normal;
 margin-bottom: 15%;
 `;
 
@@ -167,7 +166,7 @@ const PricingSection = ({ isMobile }) => {
                                     <Image src="https://via.placeholder.com/274x200" alt="Placeholder" />
                                     <ContainerTitleCard>
                                         <TitleCard>$1 to $2 /hour</TitleCard>
-                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full of enthusiasm and energy to perform various tasks.</TextCard>
+                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full..</TextCard>
                                         <Button>Hire now &#10132;</Button>
                                     </ContainerTitleCard>
                                 </CarouselCard>
@@ -175,7 +174,7 @@ const PricingSection = ({ isMobile }) => {
                                     <Image src="https://via.placeholder.com/274x200" alt="Placeholder" />
                                     <ContainerTitleCard>
                                         <TitleCard>$1 to $2 /hour</TitleCard>
-                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full of enthusiasm and energy to perform various tasks.</TextCard>
+                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full..</TextCard>
                                         <Button>Hire now &#10132;</Button>
                                     </ContainerTitleCard>
                                 </CarouselCard>
@@ -183,7 +182,7 @@ const PricingSection = ({ isMobile }) => {
                                     <Image src="https://via.placeholder.com/274x200" alt="Placeholder" />
                                     <ContainerTitleCard>
                                         <TitleCard>$1 to $2 /hour</TitleCard>
-                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full of enthusiasm and energy to perform various tasks.</TextCard>
+                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full..</TextCard>
                                         <Button>Hire now &#10132;</Button>
                                     </ContainerTitleCard>
                                 </CarouselCard>
@@ -191,7 +190,7 @@ const PricingSection = ({ isMobile }) => {
                                     <Image src="https://via.placeholder.com/274x200" alt="Placeholder" />
                                     <ContainerTitleCard>
                                         <TitleCard>$1 to $2 /hour</TitleCard>
-                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full of enthusiasm and energy to perform various tasks..</TextCard>
+                                        <TextCard>Developers with little work experience up to 2 years, that have just completed courses/training and are full..</TextCard>
                                         <Button>Hire now &#10132;</Button>
                                     </ContainerTitleCard>
                                 </CarouselCard>
