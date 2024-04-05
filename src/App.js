@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import HomeSection from './components/HomeSection';
+import PricingSection from './components/PricingSection';
+import { useMediaQuery } from 'react-responsive';
 
-function App() {
+const AppContainer = styled.div`
+  font-family: Arial, sans-serif;
+`;
+
+const Section = styled.section`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+`;
+// main sections 
+let sections = [
+  { name: "Home", component: HomeSection, desc: "" },
+  { name: "Pricing", component: PricingSection, desc: "" },
+];
+
+const App = () => {
+  const isMobile = useMediaQuery({ maxWidth: 700 });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+       {sections.map((prop, key) => {
+        let ElementPage = prop.component;
+        return (
+            <Section key={key}>
+               <ElementPage  isMobile={isMobile}/>
+            </Section>
+        );
+      })}
+    </AppContainer>
   );
-}
+};
 
 export default App;
